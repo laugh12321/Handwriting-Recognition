@@ -16,4 +16,5 @@ In ` my_own_images ` is handwritten digital images in the directory.
 
 ## Code
 
-All the code ` Neural Network. Ipynb `.
+All the code ` Neural Network.ipynb `.
+
