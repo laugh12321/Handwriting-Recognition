@@ -1,6 +1,6 @@
 # Using Neural Network to realize simple handwriting recognition
 
-[中文文档](https://github.com/laugh12321/NN_Handwriting_Recognition/README_CN.m'd)
+[中文文档](https://github.com/laugh12321/NN_Handwriting_Recognition/blob/master/README_CN.md)
 
 Through neural network programming to complete a simple digital handwritten recognition, and test their handwritten Numbers.
 
@@ -17,4 +17,3 @@ In ` my_own_images ` is handwritten digital images in the directory.
 ## Code
 
 All the code ` Neural Network. Ipynb `.
-
