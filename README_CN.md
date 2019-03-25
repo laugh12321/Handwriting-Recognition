@@ -1,17 +1,16 @@
-# 利用神经网络实现简单手写识别
+# 简单手写识别实现
+
+利用 NN， CNN 等 实现简单的手写数字识别。
+
+## [数据集](https://github.com/laugh12321/Handwriting-Recognition/tree/master/DataSet)
+
+所有的数据集在 `DataSet` 目录下，完整的数据集请自行下载（文件过大，不支持上传）。
+
+
+## [神经网络实现](https://github.com/laugh12321/Handwriting-Recognition/blob/master/Neural_Network.ipynb)
 
 通过神经网络编程完成简单的数字手写识别，并测试自己手写的数字。
 
-## 数据集
+## [卷积神经网络实现](https://github.com/laugh12321/Handwriting-Recognition/blob/master/CNN_TF.ipynb)
 
-所有的数据集在 `mnist_dataset` 目录下，完整的数据集请自行下载（文件过大，不支持上传）。
-
-👉 <https://pjreddie.com/projects/mnist-in-csv/>
-
-## my_own_images
-
-在 `my_own_images` 目录下的是自己手写的数字图片（图片规格必须是正方形，28 * 28 像素）。
-
-## 代码
-
-所有的代码都在 `Neural Network.ipynb` 中。
+在 Tensor Flow 环境下构建简单的卷积神经网络实现手写识别。
