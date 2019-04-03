@@ -2,18 +2,20 @@
 
 Using Neural Network and Convolution Neural Network to realize simple handwritten recognition.
 
-## [DataSet](https://github.com/laugh12321/Handwriting-Recognition/tree/master/DataSet)
+## DataSet
 
-All of the dataset in  `DataSet` ,the complete dataset is available for download.
+All of the dataset in  [`DataSet`](https://github.com/laugh12321/Handwriting-Recognition/tree/master/DataSet) ,the complete dataset is available for download.
 
 
-## [NN Realize](https://github.com/laugh12321/Handwriting-Recognition/blob/master/Neural_Network.ipynb)
+## NN Realize
 
 Through neural network programming to complete a simple digital handwritten recognition, and test their handwritten Numbers.
+- [Neural_Network](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/Neural_Network.ipynb)
 
-## [CNN Realize](https://github.com/laugh12321/Handwriting-Recognition/blob/master/CNN_TF.ipynb)
+## CNN Realize
 
-Based on TensorFlow, a simple convolutional neural network is constructed for handwriting recognition。
+Based on TensorFlow and Keras, a simple convolutional neural network is constructed for handwriting recognition。
 
+- [CNN_TF](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/CNN_TF.ipynb)
+- [CNN_Keras](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/CNN_Keras.ipynb)
 - [AlexNet_TF](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/AlexNet_TF.ipynb)
-
