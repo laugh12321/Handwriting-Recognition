@@ -15,3 +15,5 @@ Through neural network programming to complete a simple digital handwritten reco
 
 Based on TensorFlow, a simple convolutional neural network is constructed for handwriting recognition。
 
+- [AlexNet_TF](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/AlexNet_TF.ipynb)
+
