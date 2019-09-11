@@ -1,6 +1,9 @@
 # 简单手写识别实现
 
-利用 NN， CNN 等 实现简单的手写数字识别。
+利用 NN， CNN 等 实现简单的手写数字识别, 并使用 OpenCV 进行实时的检测。
+
+## Demo
+![Demo](https://github.com/laugh12321/Handwriting-Recognition/blob/master/OpenCV%20Recognition/Demo.gif)
 
 ## [数据集](https://github.com/laugh12321/Handwriting-Recognition/tree/master/DataSet)
 
