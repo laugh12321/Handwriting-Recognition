@@ -1,6 +1,9 @@
 # Implementation of handwriting recognition[![](https://img.shields.io/badge/-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3-brightgreen.svg)](https://github.com/laugh12321/Handwriting-Recognition/blob/master/README_CN.md)
 
-Using Neural Network and Convolution Neural Network to realize simple handwritten recognition.
+Using Neural Network and Convolution Neural Network to realize simple handwritten recognition, and using OpenCV to recognition.
+
+## Demo
+![Demo](https://github.com/laugh12321/Handwriting-Recognition/blob/master/OpenCV%20Recognition/Demo.gif)
 
 ## DataSet
 
