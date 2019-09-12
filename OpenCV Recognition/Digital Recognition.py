@@ -1,3 +1,9 @@
+
+'''
+Update on September 12, 2019
+Digital Recognition
+@author: zhangpeng bo (zhang26162@gmail.com)
+'''
 import cv2
 import numpy as np
 from keras.models import load_model
@@ -8,10 +14,11 @@ def changeDim(img):
 
     img = np.expand_dims(img, axis=2)
     img = np.expand_dims(img, axis=0)
+
     return img
 
 
-def mouse_event(event, x, y, flags, param):
+def DigitalRecognition(event, x, y, flags, param):
     ''' 鼠标绘图，并识别数字 '''
 
     global start, drawing, img_copy, flag
@@ -32,16 +39,13 @@ def mouse_event(event, x, y, flags, param):
 
         # 是否为第一个数字
         if flag:
-            cha1 = img_b - img_copy
-            cha2 = img_b - img
-            tmp = np.abs(cha2 - cha1) 
+            tmp = (img_b - img) - (img_b - img_copy)
             img2 = img_b - tmp
 
             lab = cv2.cvtColor(img2, cv2.COLOR_BGR2LAB)
         else:
-            
-            lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
             flag = True
+            lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
         
         lab = lab[:,:,1]
         # 分割字符区域   
@@ -51,7 +55,6 @@ def mouse_event(event, x, y, flags, param):
         # 识别字符
         newmask = img # 识别的最终结果图像
         for cnt in contours:
-
             # 获取矩形区域信息
             x, y, w, h = cv2.boundingRect(cnt)
             width = np.max([h, w])
@@ -80,15 +83,12 @@ def mouse_event(event, x, y, flags, param):
                     # 显示识别结果
                     font = cv2.FONT_HERSHEY_SIMPLEX
                     if resTest != 10:
-                        newmask =  cv2.putText(newmask,str(resTest),(left,up), font, 1,(0,255,255),2,cv2.LINE_AA)
-                    # else:
-                    #     newmask =  cv2.putText(newmask,'Fu',(left,up), font, 1,(0,0,255),2,cv2.LINE_AA)
+                        newmask =  cv2.putText(newmask, str(resTest), (left, up), font, 1, (0, 255, 255), 2, cv2.LINE_AA)
         img_copy = img.copy()
 
 
 # 初始画布
-img = np.zeros((1024, 1024, 3), np.uint8)
-img += 255
+img = np.zeros((1024, 1024, 3), np.uint8) + 255
 # 画布副本
 img_b = img.copy()
 
@@ -100,7 +100,7 @@ threshold = 150 #字符分割阈值
 model =load_model('model.h5')
 
 cv2.namedWindow('Digital Recognition')
-cv2.setMouseCallback('Digital Recognition', mouse_event)
+cv2.setMouseCallback('Digital Recognition', DigitalRecognition)
 
 while(True):
     cv2.imshow('Digital Recognition', img)
