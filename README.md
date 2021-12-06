@@ -17,8 +17,9 @@ Through neural network programming to complete a simple digital handwritten reco
 
 ## CNN Realize
 
-Based on TensorFlow and Keras, a simple convolutional neural network is constructed for handwriting recognition。
+Based on TensorFlow 、Keras and Pytorch, a simple convolutional neural network is constructed for handwriting recognition。
 
 - [CNN_TF](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/CNN_TF.ipynb)
 - [CNN_Keras](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/CNN_Keras.ipynb)
 - [AlexNet_TF](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/AlexNet_TF.ipynb)
+- [AlexNet_Pytorch](https://nbviewer.jupyter.org/github/laugh12321/Handwriting-Recognition/blob/master/AlexNet_Pytorch.ipynb)
